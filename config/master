@@ -1,0 +1,31 @@
+state_verbose: False
+state_output: mixed
+
+file_roots:
+  base:
+    - /srv/salt/state
+    - /srv/salt/formulas/*
+
+pillar_roots:
+  base:
+    - /srv/salt/pillar
+
+# Whether the master should listen for IPv6 connections. If this is set to True,
+# the interface option must be adjusted, too. (For example: "interface: '::'")
+#ipv6: False
+#interface: 0.0.0.0
+
+# Allow minions to push files to the master. This is disabled by default, for
+# security purposes.
+#file_recv: False
+
+# Set a hard-limit on the size of the files that can be pushed to the master.
+# It will be interpreted as megabytes. Default: 100
+#file_recv_max_size: 100
+
+# Pass in an alternative location for the salt-ssh roster file
+#roster_file: /etc/salt/roster
+
+#fileserver_backend:
+#  - git
+#  - roots

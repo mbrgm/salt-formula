@@ -1,5 +1,6 @@
-salt:
-  group.present: []
+salt_group:
+  group.present:
+    - name: salt
 
 /srv/salt:
   file.directory:
@@ -12,4 +13,4 @@ salt:
       - group
       - mode
     - require:
-      - group: salt
+      - group: salt_group
